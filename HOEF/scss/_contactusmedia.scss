@@ -1,0 +1,218 @@
+/**** Media query for max- width of 1010px*/
+@media (max-width : 1010px ){
+    header{
+        & nav{
+            & .navright{
+                & ul , & .support-btn{
+                    display: none;
+                }
+                
+                & img{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/**** Media query for max-width of 1005px*/
+@media (max-width: 1005px){
+    main{
+        flex-direction: column;
+
+        & .get-in-touch{
+            width: 100%;
+        }
+
+        & .drop-a-message{
+            width: 100%;
+            padding-left:0;
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+/**** Media query for max- width of 915px*/
+@media (max-width : 915px ){
+    header{
+        & .header-showcase{
+            height: 500px;
+            & h1{
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+/**** Media query for max- width of 520px*/
+
+@media (max-width:520px){
+    header{
+        & nav{
+            padding: 0.2rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 70px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        & .header-showcase{
+            height:400px;
+            & h1{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    main{
+        padding: 2rem 3%;
+
+        & .get-in-touch{
+            & h2{
+                font-size: 1.7rem;
+            }
+
+            & h4{
+                font-size: 0.9rem;
+            }
+
+            & .social-icons{
+                & span{
+                    height : 35px;
+                    width: 35px;
+                    padding: 0.3rem;
+
+                    & .fa{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        & .drop-a-message{
+            & h2{
+                font-size: 1.7rem;
+            }
+
+            & .inputs{
+                & form{
+                    & input , & textarea{
+                        font-size: 0.9rem;
+
+                        & ::placeholder{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        flex-direction: column;
+
+        & .social-icons{
+            width: 100%;
+            justify-content: flex-end;
+
+            & span{
+                margin-right: 0;
+                margin-left: 0.75rem;
+            }
+        }
+
+        & .copyright{
+            width: 100%;
+        }
+    }
+}
+
+/**** Media query for max- width of 360px*/
+
+@media (max-width : 360px){
+    header{
+        & nav{
+            padding: 0.4rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 40px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+        & .header-showcase{
+            height:350px;
+            & h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    main{
+        padding: 2rem 3%;
+
+        & .get-in-touch{
+            & h2{
+                font-size: 1.5rem;
+            }
+
+            & h4{
+                font-size: 0.85rem;
+            }
+
+            & .social-icons{
+                & span{
+                    height : 30px;
+                    width: 30px;
+                    padding: 0.2rem;
+
+                    & .fa{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        & .drop-a-message{
+            & h2{
+                font-size: 1.5rem;
+            }
+
+            & .inputs{
+                & form{
+                    & input , & textarea{
+                        font-size: 0.85rem;
+
+                        & ::placeholder{
+                            font-size: 0.85rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 270px){
+    :root{
+        font-size: 90%;
+    }
+}
+
+@media (max-width : 180px){
+    :root{
+        font-size: 60%;
+    }
+}

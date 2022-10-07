@@ -1,0 +1,501 @@
+/**** Media query for max- width of 1010px*/
+@media (max-width : 1010px ){
+    header{
+        & nav{
+            & .navright{
+                & ul , & .support-btn{
+                    display: none;
+                }
+                
+                & img{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/**** Media query for max- width of 915px*/
+@media (max-width : 915px ){
+    header{
+        & .header-showcase{
+            height: 500px;
+            & h1{
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    .educational-services{
+        padding: 0.75rem 3%;
+
+        & h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    .heart-school{
+        & .intro{
+            padding: 1rem 3%;
+
+            & h1{
+                font-size: 1.7rem;
+            }
+
+            & h3{
+                font-size: 1.2rem;
+            }
+
+            & h4{
+                font-size: 0.9rem;
+                max-width: 85%;
+            }
+        }
+
+        & .what-we-aim{
+            flex-direction: column-reverse;
+
+            & .what-we-aim-words{
+                width: 100%;
+                
+                & h2{
+                    margin-bottom: 2rem;
+                    font-size: 1.2rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            & .what-we-aim-img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        & .tuition-info{
+            padding: 1.5rem 3% 2rem 3%;
+
+            & > h1{
+                font-size: 1.7rem;
+            }
+
+            & blockquote{
+                padding: 1.5rem 5rem;
+
+                &::before{
+                    font-size: 3rem;
+                    left: 1.5rem;
+                }
+
+                &::after{
+                    font-size: 3rem;
+                    right: 1.5rem;
+                }
+
+                & p{
+                    font-size: 1.3rem;
+                }
+            }
+
+            & main{
+                padding: 1rem 3%;
+
+                & p{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        & .fee-info{
+            padding: 1rem 3% 1.5rem 3%;
+
+            & > h1{
+                font-size: 1.7rem;
+            }
+
+            & main{
+                & p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        & .teaching-staff{
+            padding: 1rem 3% 1.5rem 3%;
+
+            & h1{
+                font-size: 1.7rem;
+            }
+
+            & main{
+                & h3{
+                    font-size: 1.1rem;
+                }
+
+                & h6{
+                    font-size: 1rem;
+                }
+
+                & img{
+                    width: 75%;
+                }
+            }
+        }
+
+        & .application{
+            padding: 1rem 3% 2rem 3%;
+
+            & h1{
+                font-size: 1.7rem;
+            }
+
+            & h3{
+                font-size: 1.1rem;
+            }
+
+            & main{
+                max-width: 85%;
+
+                & form{
+                    & label{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**** Media query for max- width of 520px*/
+
+@media (max-width:520px){
+    header{
+        & nav{
+            padding: 0.2rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 70px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        & .header-showcase{
+            height:400px;
+            & h1{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .educational-services{
+        padding: 0.75rem 3%;
+
+        & h2{
+            font-size: 1.8rem;
+        }
+    }
+
+    .heart-school{
+        & .intro{
+            & h1{
+                font-size: 1.5rem;
+            }
+
+            & h3{
+                font-size: 1.1rem;
+            }
+
+            & h4{
+                font-size: 0.9rem;
+                max-width: 85%;
+            }
+        }
+
+        & .what-we-aim{
+            & .what-we-aim-words{                
+                & h2{
+                    font-size: 1.1rem;
+                }
+            }
+
+            & .what-we-aim-img{
+                height: 400px;
+            }
+        }
+
+        & .tuition-info{
+            padding: 1.5rem 3% 2rem 3%;
+
+            & > h1{
+                font-size: 1.5rem;
+            }
+
+            & blockquote{
+                padding: 1.5rem 4rem;
+
+                &::before{
+                    font-size: 2rem;
+                    left: 1.5rem;
+                }
+
+                &::after{
+                    font-size: 2rem;
+                    right: 1.5rem;
+                }
+
+                & p{
+                    font-size: 1.2rem;
+                }
+            }
+
+            & main{
+                padding: 1rem 3%;
+
+                & p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        & .fee-info{
+            & > h1{
+                font-size: 1.5rem;
+            }
+
+            & main{
+                & p{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        & .teaching-staff{
+            & h1{
+                font-size: 1.5rem;
+            }
+
+            & main{
+                & h3{
+                    font-size: 1rem;
+                }
+
+                & h6{
+                    font-size: 0.95rem;
+                }
+
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+
+        & .application{
+            & h1{
+                font-size: 1.5rem;
+            }
+
+            & h3{
+                font-size: 1rem;
+            }
+
+            & main{
+                max-width: 100%;
+
+                & form{
+                    & label{
+                        font-size: 1rem;
+                    }
+
+                    & .names{
+                        & input{
+                            width: 97%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        flex-direction: column;
+
+        & .social-icons{
+            width: 100%;
+            justify-content: flex-end;
+
+            & span{
+                margin-right: 0;
+                margin-left: 0.75rem;
+            }
+        }
+
+        & .copyright{
+            width: 100%;
+        }
+    }
+}
+
+/**** Media query for max- width of 360px*/
+
+@media (max-width : 360px){
+    header{
+        & nav{
+            padding: 0.4rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 40px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+        & .header-showcase{
+            height:350px;
+            & h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .educational-services{
+        padding: 0.75rem 3%;
+
+        & h2{
+            font-size: 1.5rem;
+        }
+    }
+
+    .heart-school{
+        & .intro{
+            & h1{
+                font-size: 1.2rem;
+            }
+
+            & h3{
+                font-size: 1rem;
+            }
+
+            & h4{
+                font-size: 0.8rem;
+                max-width: 85%;
+            }
+        }
+
+        & .what-we-aim{
+            & .what-we-aim-words{     
+                & h1{
+                    font-size: 1.1rem;
+                }
+
+                & h2{
+                    font-size: 1rem;
+                }
+            }
+
+            & .what-we-aim-img{
+                height: 350px;
+            }
+        }
+
+        & .tuition-info{
+            padding: 1.5rem 3% 2rem 3%;
+
+            & blockquote{
+                padding: 1.5rem 3rem;
+
+                &::before{
+                    font-size: 2rem;
+                    left: 0.75rem;
+                }
+
+                &::after{
+                    font-size: 2rem;
+                    right: 0.75rem;
+                }
+
+                & p{
+                    font-size: 1.1rem;
+                }
+            }
+
+            & main{
+                padding: 1rem 3%;
+
+                & p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        & .fee-info{
+            & > h1{
+                font-size: 1.3rem;
+            }
+
+            & main{
+                & p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        & .teaching-staff{
+            & h1{
+                font-size: 1.3rem;
+            }
+
+            & main{
+                & h3{
+                    font-size: 1rem;
+                }
+
+                & h6{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        & .application{
+            & h1{
+                font-size: 1.3rem;
+            }
+
+            & h3{
+                font-size: 1rem;
+            }
+
+            & main{
+                & form{
+                    & label{
+                        font-size: 0.9rem;
+                    }
+
+                    & .names{
+                        & input{
+                            width: 97%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 270px){
+    :root{
+        font-size: 80%;
+    }
+}
+@media (max-width : 180px){
+    :root{
+        font-size: 60%;
+    }
+}

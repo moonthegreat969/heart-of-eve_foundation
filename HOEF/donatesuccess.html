@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HEART OF EVE FOUNDATION">
+    <meta name="description" content="Heart of Eve Foundation is a duly registered NGO based in Lagos, Nigeria and founded on the Christain principle of loving others through acts of service. Our organization aims to show love of Christ in action as we provided needed services and social supports.Through our education initiative, we have created the Heart School. Through our Heart Schools, Heart of Eve Foundation aims to address the spiritual and educational needs of children and families within our community.">
+    <meta name="keywords" content="Heart Eve ,Heart of Eve , NGO Foundation , Heart School , Heart of Eve Foundation, NGO , NGO website , NGO Lagos , CCC , Cosmas Children Center , Heart of Eve Lagos">
+
+    <title>HEART OF EVE FOUNDATION - Donate Succesful</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="./images/heartofeve.ico">
+
+
+    <!--linked custom css and Js files-->
+    <link rel="preload" href="./dist/supportus.css" as="style">
+    <link rel="stylesheet" href="./dist/supportus.css">
+    <script src="scripts.js" defer></script>
+    <script src="scripts2.js" defer></script>
+    <script src="paystack.js" defer></script>
+
+    <!--Fonts , icons ,CSS and JS libraries-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap&family=Montserrat:wght@300;400;500;600;700&display=swap&family=Roboto&family=Raleway&family=Nanum+Gothic&family=Inter&family=Lora">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--Header starts-->
+    <header>
+        <!--Fixed navbar to the top-->
+        <nav>
+            <!--Navigation logo to the left-->
+            <div class="navlogo">
+                <a href="index.html">
+                    <img src="./images/logo5.png" alt="logo">
+                    <div class="navlogo-name">
+                        <h1>HEART OF EVE</h1>
+                        <h1>FOUNDATION</h1>
+                    </div>
+                </a>
+            </div>
+            <!--Nav segment to the right-->
+            <div class="navright">
+                <!--Text links-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="ourservices.html">OUR SERVICES</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+                <!--Support Us Button-->
+                <a href="supportus.html" class="support-btn nav-active" ><span>SUPPORT US</span></a>
+                <!--Hidden hamburger icon-->
+                <img src="./images/blackhamburgericon.png" alt="black hamburger icon" onclick="hambgFunction()">
+            </div>
+        </nav>
+
+        <!--Headrer showcase-->
+        <section class="header-showcase">
+            <h1>Support Us</h1>
+    </header>
+
+    <main>
+        <div class="headings">
+            <h2>Be a part of our initiative today. Support our mission!</h2>
+            <h4>Your contribution will assist us to make every family afford high standard academics.</h4>
+        </div>
+
+        <div class="main-row">
+            <section class="donate-section">
+                <div class="donate-info">
+                    <div class="dual-btns">
+                        <button id="donate-once-btn" class="donate-once-btn">Donate Once</button>
+                        <button id="recurring-trigger" class="recurring-btn">Recurring</button>
+                    </div>
+                    <h3 id="donation-form-header">Enter an amount to give</h3>
+                </div>
+                <form class="donate-form-body" action="https://formsubmit.co/17f9527ebf64e71603c1ef1cdb876f5d" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/donatesuccess.html">
+                    <input type="hidden" name="_subject" value="Donation to Heart Eve Foundation">
+                    <input type="hidden" name="_replyto" value="Request to Donate to Heart Eve Foundation">
+                    <div class="donation-amount-body" id="donation-amount-body">
+                        <label for="donation-amount" class="donate-amount-label">Donation Amount</label>
+                        <div class="donate-amount-input">
+                            <span class="pre-input"><p>₦</p></span>
+                            <input type="number" name="Donation Amount (₦)" id="donation-amount" required value>
+                        </div>
+                        <h4 id="donation-amount-error">Please insert an amount to continue</h4>
+                        <button class="proceed-btn" id="proceed-btn" >PROCEED</button>
+                    </div>
+                    <div class="donation-real-form" id="donation-real-form">
+
+                        <div class="form-real">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="First Name" id="donate-firstname" required value>
+                            
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="Last Name" id="donate-lastname" required value>
+
+                            <label for="email">Email Address</label>
+                            <input type="email" name="Email Address" id="donate-email" required value>
+
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="Phone Number" id="donate-phonenumber" required value>
+
+                            <label for="">Organisation</label>
+                            <input type="text"  name="Organisation" id="donate-organisation" required value>
+
+                            <span id="unproceedBtn"><a href="#" class="fa fa-caret-right" ></a> Change Amount</span>
+
+                            <button type="submit" id="donate-submit-btn" class="donate-submit-btn">DONATE</button>
+
+                        </div>
+                    </div>
+                </form>
+
+
+                <script defer>
+                    //This is the script to check if the donation amount input is empty or not
+                    //and then triggers the complete form to open if true 
+                    var proceedBtn = document.getElementById("proceed-btn");
+                    var formHeader = document.getElementById("donation-form-header");
+                    var unproceedBtn = document.getElementById("unproceedBtn")
+
+                    function proceedFunc() {
+                        const donateAmount = document.getElementById("donation-amount").value;
+                        const donateAmountError = document.getElementById("donation-amount-error");
+
+                        if (donateAmount.length > 0) {
+                            formHeader.innerHTML = `You are donating ₦${donateAmount}`;
+                            donateAmountError.style.display = "none";
+                            document.getElementById("donation-amount-body").style.display = "none";
+                            document.getElementById("donation-real-form").style.display = "block";                             
+                        }else{
+                            donateAmountError.style.display = "block";
+                        }
+                    }
+
+                    function unproceedFunc() {
+                        document.getElementById("donation-amount-body").style.display = "block";
+                        document.getElementById("donation-real-form").style.display = "none"; 
+                    }
+
+                    proceedBtn.addEventListener('click' , proceedFunc);
+                    unproceedBtn.addEventListener('click' , unproceedFunc);
+
+
+                </script>
+            </section>
+            <section class="donate-img"></section>
+        </div>
+    </main>
+
+    <!--This is the modal that shows then the "Recurring" button is clicked-->
+    <!--No actual recurring payment is made-->
+    <!--It is just a payment request form-->
+
+    <section class="recurring-modal" id="recurring-modal">
+        <div class="modal-content">
+            <div class="close-modal" id="close-recurring-modal"><a href="#" class="fa fa-times"></a></div>
+
+            <header class="modal-header">
+                <img src="./images/logo5.png" alt="logo">
+                <h1>Request for Recurring Donation</h1>
+                <h3>BY HEART OF EVE FOUNDATION</h3>
+            </header>
+
+            <form action="https://formsubmit.co/17f9527ebf64e71603c1ef1cdb876f5d" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/donatesuccess.html">
+                <input type="hidden" name="_subject" value="Recurring Donation Information Request">
+                <input type="hidden" name="_replyto" value="Request to donate recurring to Heart Of Eve Foudantion">
+                <div class="names">
+                    <div class="firstname-sec name-sec">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" class="first-name" required>
+                    </div>
+                    <div class="lastname-sec name-sec">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" class="last-name" required>
+                    </div>
+                </div>
+
+                <label for="email">Email</label>
+                <input type="email" name="Email Address" id="email" required>
+
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="Phone Number" id="phone-number" required>
+
+                <label for="amount">Amount to Charge</label>
+                
+                <div class="amount" id="amount">
+                    <div class="currency">
+                        <select name="currency" id="currency" disabled required>
+                            <option value="Naira">NGN</option>
+                        </select>
+                    </div>
+                    <div class="amount-input">
+                        <input type="number" name="Amount to Be Charged" id="amount-to-charge" required>
+                    </div>
+                </div>
+
+                <div class="payment-intervals">
+                    <div class="interval">
+                        <label for="payment-interval">Interval</label>
+                        <select name="Payment Interval" id="payment-interval" required>
+                            <option value="Hourly">Hourly</option>
+                            <option value="Daily">Daily</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Quarterly">Quarterly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Biannually">Biannually</option>
+                            <option value="Anually">Anually</option>
+                        </select>
+                    </div>
+
+                    <div class="payments-count">
+                        <label for="payment-count">How many payments</label>
+                        <select name="Payment Iteration" id="payment-count">
+                            <option value="Indefinite charge">Charge me indefinitely</option>
+                            <option value="Limited Chargee">Set a Limit</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="organisation">Organisation</label>
+                <input type="text" name="organisation" id="organisation">
+
+                <button type="submit" id="recurring-submit">Request for this donation plan</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="donate-success-modal" id="donate-success-modal">
+        <div class="modal-content">
+            <div class="close-modal" id="close-donate-success-modal">
+                <a href="#" class="fa fa-times"></a>
+            </div>
+
+            <main>
+                <div class="marked"><a href="#" class="fa fa-check"></a></div>
+                <h2>Your Donation request was received successfully.<br>
+                We will reach out to you and provide our necessary details.</h2>
+            </main>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("close-donate-success-modal").addEventListener("click" , closeDonateSuccessModal)
+
+        function closeDonateSuccessModal() {
+            document.getElementById("donate-success-modal").classList.toggle("close-success-modal");                
+        }
+    </script>
+
+
+    <script defer>
+        //This is the script to toggle the open and close of the recurring donation request form.
+        var recurringDonationButton = document.getElementById("recurring-trigger");
+        var recurringDonationModal = document.getElementById("recurring-modal");
+        var closeRecurringModal = document.getElementById("close-recurring-modal");
+
+
+        function openRecurringModal() {
+            recurringDonationModal.classList.toggle("show-modal");
+        }
+
+
+        function windowOnClick(event) {
+            if (event.target === recurringDonationModal) {
+                openRecurringModal();
+            }
+        }
+
+        recurringDonationButton.addEventListener("click", openRecurringModal);
+        closeRecurringModal.addEventListener("click", openRecurringModal);
+        window.addEventListener("click", windowOnClick);
+
+
+    </script>
+
+    <!--Footer starts-->
+    <footer>
+        <!--Footer social media icons-->
+        <div class="social-icons">
+            <span><a href="https://www.facebook.com/HeartofEveFoundation/" target="_blank" class="fa fa-facebook"></a></span>
+            <span><a href="https://twitter.com/HeartofEve_fdn?t=EksoSxEGRXTiRp6Vz7IW5Q&s=09" target="_blank" class="fa fa-twitter"></a></span>
+            <span><a href="https://www.linkedin.com/company/heart-of-eve-foundation" target="_blank" class="fa fa-linkedin"></a></span>
+            <span><a href="https://www.instagram.com/heartofeve_foundation/" target="_blank" class="fa fa-instagram"></a></span>
+            <span><a href="https://wa.link/qkntqv" target="_blank" class="fa fa-whatsapp"></a></span>
+        </div>
+        <!--Copyright segment-->
+        <div class="copyright">
+            <h3>@<script defer>document.write(new Date().getFullYear())</script> Heart of Eve Foundation</h3>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+    <!--This is the navigation section that shhows up when the hamburger is clicked on small and mid with devices-->
+    <aside class="hidden-nav" id="hidden-nav">
+        <!--The section that contains the cross to close the hidden nav-->
+        <a href="#" class="fa fa-times close-nav" onclick="closeNavFunction()"></a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="ourservices.html">OUR SERVICES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="supportus.html">SUPPORT US</a></li>
+        </ul>
+    </aside>
+</body>

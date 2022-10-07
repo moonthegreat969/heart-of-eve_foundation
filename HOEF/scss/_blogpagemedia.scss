@@ -1,0 +1,155 @@
+/**** Media query for max- width of 1010px*/
+@media (max-width : 1010px ){
+    header{
+        & nav{
+            & .navright{
+                & ul , & .support-btn{
+                    display: none;
+                }
+                
+                & img{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    main{
+        & .inner-main{
+            width: 70%;
+        }
+    }
+}
+
+/**** Media query for max- width of 915px*/
+@media (max-width : 915px ){
+   header{
+        & .header-showcase{
+            padding: 6rem 12% 2rem 12%;
+            & h1{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    main{
+        & .inner-main{
+            width: 85%;
+        }
+    }
+}
+
+
+/**** Media query for max- width of 520px*/
+
+@media (max-width:520px){
+    header{
+        & nav{
+            padding: 0.2rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 70px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        & .header-showcase{
+            padding: 6rem 12% 2rem 12%;
+            & h1{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    main{
+        padding: 1rem 8%;
+        & .inner-main{
+            width: 100%;
+        }
+    }
+
+    footer{
+        flex-direction: column;
+
+        & .social-icons{
+            width: 100%;
+            justify-content: flex-end;
+
+            & span{
+                margin-right: 0;
+                margin-left: 0.75rem;
+            }
+        }
+
+        & .copyright{
+            width: 100%;
+        }
+    }
+}
+
+/**** Media query for max- width of 360px*/
+
+@media (max-width : 360px){
+
+    :root{
+        font-size: 80%;
+    }
+
+    header{
+        & nav{
+            padding: 0.4rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 40px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+
+        & .header-showcase{
+            padding: 4rem 12% 2rem 12%;
+            & h1{
+                font-size: 19.2px;
+            }
+        }
+    }
+
+    main{
+        & .inner-main{
+            & header{
+                flex-direction: column;
+
+                & img{
+                    margin: 0 auto;
+                }
+            }
+
+            & .header-info{
+                align-items: center;
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width : 270px){
+    :root{
+        font-size: 90%;
+    }
+}
+@media (max-width : 180px){
+    :root{
+        font-size: 60%;
+    }
+}
