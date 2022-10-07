@@ -1,2 +1,2 @@
-# heart-of-eve_foundation
-Heart of Eve Foundation is a duly registered NGO based in Lagos, Nigeria and founded on the Christain principle of loving others through acts of service. Our organization aims to show love of Christ in action as we provided needed services and social supports.Through our education initiative, we have created the Heart School. Through our Heart Schools, Heart of Eve Foundation aims to address the spiritual and educational needs of children and families within our community.
+# hHEART OF EVE FOUNDATION
+This is the source code official website of Heart of Eve foundation.1
