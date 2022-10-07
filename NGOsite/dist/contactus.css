@@ -1,0 +1,531 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+header nav {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: #f2f2f2;
+  z-index: 2;
+}
+header nav .navlogo a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav .navlogo a img {
+  width: 80px;
+}
+header nav .navlogo a .navlogo-name {
+  display: flex;
+  flex-direction: column;
+}
+header nav .navlogo a .navlogo-name h1 {
+  color: #000;
+  font-family: Montserrat, Poppins, Verdana;
+  font-weight: 700 !important;
+  font-size: 1.3rem;
+  line-height: 1.1em;
+}
+header nav .navright {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+header nav .navright ul {
+  display: block;
+  position: relative;
+  list-style-type: none;
+  height: 75%;
+}
+header nav .navright ul li {
+  display: inline-block;
+  margin: 0 0.75rem;
+  height: 100%;
+  position: relative;
+  height: 100%;
+}
+header nav .navright ul li a {
+  position: relative;
+  display: block;
+  color: rgb(211, 6, 6);
+  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 0.3rem;
+  height: 100%;
+  transition: 200ms opacity ease;
+  /*
+  &:hover{
+      border-bottom: 4px solid $primary-color;
+  }*/
+}
+header nav .navright ul li a:hover {
+  opacity: 0.6;
+}
+header nav .navright ul li i {
+  color: black;
+}
+header nav .navright .support-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background-color: #fb7777;
+  border: 2px solid #fa4545;
+  margin: auto 0;
+  margin-left: 1.5rem;
+  border-radius: 20%/50%;
+  transform: translateY(-10%);
+}
+header nav .navright .support-btn:hover {
+  background-color: #fa4545;
+}
+header nav .navright .support-btn span {
+  color: #fff;
+  font-family: Poppins, verdana;
+  font-size: 1rem;
+  font-weight: 600;
+}
+header nav .navright img {
+  display: inline-block;
+  width: 30px;
+  align-self: center;
+  display: none;
+}
+header .header-showcase {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/schoolimage31.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 1;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
+  & .overlay1{
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+      width: 30%;
+      z-index:2;
+      //background-image:linear-gradient(to right ,rgb(241, 241, 25 , 0.8) , transparent) ;
+      background-image:linear-gradient(to right , rgba(138, 8, 8, 0.699) , transparent);
+  }
+
+  & .overlay2{
+      position: absolute;
+      top:0;
+      right:0;
+      height: 100%;
+      width: 20%;
+      z-index:3;
+      //background-image:linear-gradient(to right , transparent , rgb(241, 241, 25 , 0.8));
+      background-image:linear-gradient(to left ,rgba(138, 8, 8, 0.699) , transparent);
+  }*/
+}
+header .header-showcase h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.nav-active {
+  border-bottom: 4px solid rgb(211, 6, 6);
+  opacity: 1 !important;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 5%;
+  background-color: #fff;
+}
+main .get-in-touch {
+  width: 40%;
+}
+main .get-in-touch h2 {
+  color: rgb(211, 6, 6);
+  font-size: 2rem;
+  font-family: Poppins;
+  padding: 2rem 0 1rem 0;
+}
+main .get-in-touch h4 {
+  font-family: Poppins;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: rgb(56, 52, 52) !important;
+}
+main .get-in-touch h4 a {
+  color: rgb(12, 26, 151) !important;
+  border-bottom: 1px solid rgb(12, 26, 151);
+  padding-bottom: 0;
+  margin-left: 0.5rem;
+}
+main .get-in-touch .social-icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+main .get-in-touch .social-icons span {
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .get-in-touch .social-icons span .fa {
+  color: #f8f818;
+  font-size: 20px;
+}
+main .drop-a-message {
+  width: 60%;
+  padding-left: 2rem;
+}
+main .drop-a-message h2 {
+  color: rgb(211, 6, 6);
+  font-size: 2rem;
+  font-family: Poppins;
+  padding: 2rem 0 1rem 0;
+}
+main .drop-a-message h4 {
+  font-family: Poppins;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: rgb(56, 52, 52);
+}
+main .drop-a-message .inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .drop-a-message .inputs form {
+  width: 100%;
+}
+main .drop-a-message .inputs form input, main .drop-a-message .inputs form textarea {
+  border: 0;
+  background-color: #f2f2f2;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+}
+main .drop-a-message .inputs form input::-moz-placeholder, main .drop-a-message .inputs form textarea::-moz-placeholder {
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  color: #000;
+}
+main .drop-a-message .inputs form input:-ms-input-placeholder, main .drop-a-message .inputs form textarea:-ms-input-placeholder {
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  color: #000;
+}
+main .drop-a-message .inputs form input::placeholder, main .drop-a-message .inputs form textarea::placeholder {
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  color: #000;
+}
+main .drop-a-message .inputs form #name {
+  width: 100%;
+  height: 40px;
+  padding: 0.75rem;
+}
+main .drop-a-message .inputs form #email {
+  width: 100%;
+  height: 40px;
+  padding: 0.75rem;
+}
+main .drop-a-message .inputs form #textarea {
+  width: 100%;
+  min-height: 250px;
+  resize: vertical;
+}
+main .drop-a-message .inputs form button {
+  padding: 0.5rem 2rem;
+  margin: 2rem 0 1rem 0;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  background-color: #fa4545;
+  border: 2px solid rgb(211, 6, 6);
+  color: #fff;
+}
+main .drop-a-message .inputs form button:hover {
+  background-color: rgb(211, 6, 6);
+}
+
+footer {
+  width: 100%;
+  padding: 0.5rem 5%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+}
+footer .social-icons {
+  width: 50%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .social-icons span {
+  height: 30px;
+  width: 30px;
+  background-color: #000;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-icons span .fa {
+  color: #f8f818;
+  font-size: 18px;
+}
+footer .copyright {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .copyright h3 {
+  color: #000;
+  font-weight: 700 !important;
+  font-family: Poppins, sans-serif;
+  font-size: 0.9rem;
+}
+
+aside.hidden-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background-color: rgb(211, 6, 6);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s all ease-in-out;
+}
+aside.hidden-nav a.close-nav {
+  display: inline-block;
+  color: #fff;
+  margin: 30px;
+  margin-left: auto;
+  font-size: 30px;
+}
+aside.hidden-nav ul {
+  position: relative;
+}
+aside.hidden-nav ul li {
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  margin: 1.5rem 2rem;
+  list-style-type: none;
+}
+aside.hidden-nav ul li a {
+  color: #fff;
+}
+
+/**** Media query for max- width of 1010px*/
+@media (max-width: 1010px) {
+  header nav .navright ul, header nav .navright .support-btn {
+    display: none;
+  }
+  header nav .navright img {
+    display: block;
+  }
+}
+/**** Media query for max-width of 1005px*/
+@media (max-width: 1005px) {
+  main {
+    flex-direction: column;
+  }
+  main .get-in-touch {
+    width: 100%;
+  }
+  main .drop-a-message {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+}
+/**** Media query for max- width of 915px*/
+@media (max-width: 915px) {
+  header .header-showcase {
+    height: 500px;
+  }
+  header .header-showcase h1 {
+    font-size: 3.5rem;
+  }
+}
+/**** Media query for max- width of 520px*/
+@media (max-width: 520px) {
+  header nav {
+    padding: 0.2rem 2%;
+  }
+  header nav .navlogo a img {
+    width: 70px;
+  }
+  header nav .navlogo a .navlogo-name h1 {
+    font-size: 1.1rem;
+  }
+  header .header-showcase {
+    height: 400px;
+  }
+  header .header-showcase h1 {
+    font-size: 3rem;
+  }
+  main {
+    padding: 2rem 3%;
+  }
+  main .get-in-touch h2 {
+    font-size: 1.7rem;
+  }
+  main .get-in-touch h4 {
+    font-size: 0.9rem;
+  }
+  main .get-in-touch .social-icons span {
+    height: 35px;
+    width: 35px;
+    padding: 0.3rem;
+  }
+  main .get-in-touch .social-icons span .fa {
+    font-size: 17px;
+  }
+  main .drop-a-message h2 {
+    font-size: 1.7rem;
+  }
+  main .drop-a-message .inputs form input, main .drop-a-message .inputs form textarea {
+    font-size: 0.9rem;
+  }
+  main .drop-a-message .inputs form input ::-moz-placeholder, main .drop-a-message .inputs form textarea ::-moz-placeholder {
+    font-size: 0.9rem;
+  }
+  main .drop-a-message .inputs form input :-ms-input-placeholder, main .drop-a-message .inputs form textarea :-ms-input-placeholder {
+    font-size: 0.9rem;
+  }
+  main .drop-a-message .inputs form input ::placeholder, main .drop-a-message .inputs form textarea ::placeholder {
+    font-size: 0.9rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .social-icons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  footer .social-icons span {
+    margin-right: 0;
+    margin-left: 0.75rem;
+  }
+  footer .copyright {
+    width: 100%;
+  }
+}
+/**** Media query for max- width of 360px*/
+@media (max-width: 360px) {
+  header nav {
+    padding: 0.4rem 2%;
+  }
+  header nav .navlogo a img {
+    width: 40px;
+  }
+  header nav .navlogo a .navlogo-name h1 {
+    font-size: 0.95rem;
+  }
+  header .header-showcase {
+    height: 350px;
+  }
+  header .header-showcase h1 {
+    font-size: 2.5rem;
+  }
+  main {
+    padding: 2rem 3%;
+  }
+  main .get-in-touch h2 {
+    font-size: 1.5rem;
+  }
+  main .get-in-touch h4 {
+    font-size: 0.85rem;
+  }
+  main .get-in-touch .social-icons span {
+    height: 30px;
+    width: 30px;
+    padding: 0.2rem;
+  }
+  main .get-in-touch .social-icons span .fa {
+    font-size: 15px;
+  }
+  main .drop-a-message h2 {
+    font-size: 1.5rem;
+  }
+  main .drop-a-message .inputs form input, main .drop-a-message .inputs form textarea {
+    font-size: 0.85rem;
+  }
+  main .drop-a-message .inputs form input ::-moz-placeholder, main .drop-a-message .inputs form textarea ::-moz-placeholder {
+    font-size: 0.85rem;
+  }
+  main .drop-a-message .inputs form input :-ms-input-placeholder, main .drop-a-message .inputs form textarea :-ms-input-placeholder {
+    font-size: 0.85rem;
+  }
+  main .drop-a-message .inputs form input ::placeholder, main .drop-a-message .inputs form textarea ::placeholder {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 270px) {
+  :root {
+    font-size: 90%;
+  }
+}
+@media (max-width: 180px) {
+  :root {
+    font-size: 60%;
+  }
+}/*# sourceMappingURL=contactus.css.map */

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HEART OF EVE FOUNDATION">
+    <meta name="description" content="Heart of Eve Foundation is a duly registered NGO based in Lagos, Nigeria and founded on the Christain principle of loving others through acts of service. Our organization aims to show love of Christ in action as we provided needed services and social supports.Through our education initiative, we have created the Heart School. Through our Heart Schools, Heart of Eve Foundation aims to address the spiritual and educational needs of children and families within our community.">
+    <meta name="keywords" content="Heart Eve ,Heart of Eve , NGO Foundation , Heart School , Heart of Eve Foundation, NGO , NGO website , NGO Lagos , CCC , Cosmas Children Center , Heart of Eve Lagos">
+
+    <title>HEART OF EVE FOUNDATION - Blog</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="./images/heartofeve.ico">
+
+
+    <!--linked custom css and Js files-->
+    <link rel="preload" href="./dist/blog.css" as="style">
+    <link rel="stylesheet" href="./dist/blog.css">
+    <script src="scripts.js" defer></script>
+    <script src="scripts2.js" defer></script>
+
+    <!--Fonts , icons ,CSS and JS libraries-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap&family=Montserrat:wght@300;400;500;600;700&display=swap&family=Roboto&family=Raleway&family=Nanum+Gothic&family=Inter">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--Header starts-->
+    <header>
+        <!--Fixed navbar to the top-->
+        <nav>
+            <!--Navigation logo to the left-->
+            <div class="navlogo">
+                <a href="index.html">
+                    <img src="./images/logo5.png" alt="logo">
+                    <div class="navlogo-name">
+                        <h1>HEART OF EVE</h1>
+                        <h1>FOUNDATION</h1>
+                    </div>
+                </a>
+            </div>
+            <!--Nav segment to the right-->
+            <div class="navright">
+                <!--Text links-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="ourservices.html">OUR SERVICES</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="blog.html" class="nav-active">BLOG</a></li>
+                </ul>
+                <!--Support Us Button-->
+                <a href="supportus.html" class="support-btn"><span>SUPPORT US</span></a>
+                <!--Hidden hamburger icon-->
+                <img src="./images/blackhamburgericon.png" alt="black hamburger icon" onclick="hambgFunction()">
+            </div>
+        </nav>
+
+        <!--Header showcase-->
+        <section class="header-showcase">
+            <h1>Blog</h1>
+        </section>
+    </header>
+
+    <!--the main segment where all the links to the individual blog pages are-->
+    <!--each blog-content class represents the whole of a blog page link-->
+    <main>
+        
+        <div class="blog-content">
+            <a href="blogpage.html">
+                <img src="./images/schoolimage5.jpg" alt="">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, unde.</h2>
+                <section class="date-tag">
+                    <span class="month">JAN</span>
+                    <span class="day">15</span>
+                </section>
+            </a>
+            <h3>By <span>Lorem Ipsum </span></h3>
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+        </div>
+        
+    </main>
+
+
+    <!--Footer starts-->
+    <footer>
+        <!--Footer social media icons-->
+        <div class="social-icons">
+            <span><a href="https://www.facebook.com/HeartofEveFoundation/" target="_blank" class="fa fa-facebook"></a></span>
+            <span><a href="https://twitter.com/HeartofEve_fdn?t=EksoSxEGRXTiRp6Vz7IW5Q&s=09" target="_blank" class="fa fa-twitter"></a></span>
+            <span><a href="https://www.linkedin.com/company/heart-of-eve-foundation" target="_blank" class="fa fa-linkedin"></a></span>
+            <span><a href="https://www.instagram.com/heartofeve_foundation/" target="_blank" class="fa fa-instagram"></a></span>
+            <span><a href="https://wa.link/qkntqv" target="_blank" class="fa fa-whatsapp"></a></span>
+        </div>
+        <!--Copyright segment-->
+        <div class="copyright">
+            <h3>@<script defer>document.write(new Date().getFullYear())</script> Heart of Eve Foundation</h3>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+    <!--This is the navigation section that shhows up when the hamburger is clicked on small and mid with devices-->
+    <aside class="hidden-nav" id="hidden-nav">
+        <!--The section that contains the cross to close the hidden nav-->
+        <a href="#" class="fa fa-times close-nav" onclick="closeNavFunction()"></a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="ourservices.html">OUR SERVICES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="supportus.html">SUPPORT US</a></li>
+        </ul>
+    </aside>
+
+</body>

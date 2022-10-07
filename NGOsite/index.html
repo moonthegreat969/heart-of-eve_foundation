@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HEART OF EVE FOUNDATION">
+    <meta name="description" content="Heart of Eve Foundation is a duly registered NGO based in Lagos, Nigeria and founded on the Christain principle of loving others through acts of service. Our organization aims to show love of Christ in action as we provided needed services and social supports.Through our education initiative, we have created the Heart School. Through our Heart Schools, Heart of Eve Foundation aims to address the spiritual and educational needs of children and families within our community.">
+    <meta name="keywords" content="Heart Eve ,Heart of Eve , NGO Foundation , Heart School , Heart of Eve Foundation, NGO , NGO website , NGO Lagos , CCC , Cosmas Children Center , Heart of Eve Lagos">
+    
+    <title>HEART OF EVE FOUNDATION - Home</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="./images/heartofeve.ico">
+
+
+    <!--linked custom css and Js files-->
+    <link rel="preload" href="./dist/main.css" as="style">
+    <link rel="stylesheet" href="./dist/main.css">
+    <script src="scripts.js" defer></script>
+    <script src="scripts2.js" defer></script>
+
+    <!--Fonts , icons ,CSS and JS libraries-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap&family=Montserrat:wght@300;400;500;600;700&display=swap&family=Roboto&family=Raleway&family=Nanum+Gothic&family=Inter">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--Header: comprises of fixed nav and showcase carousel-->
+    <header>
+        <!--Fixed navbar to the top-->
+        <nav>
+            <!--The navigation logo to the right-->
+            <div class="navlogo">
+                <a href="index.html">
+                    <img src="./images/logo5.png" alt="logo">
+                    <div class="navlogo-name">
+                        <h1>HEART OF EVE</h1>
+                        <h1>FOUNDATION</h1>
+                    </div>
+                </a>
+            </div>
+            <!--Left part of nav-->
+            <div class="navright">
+                <ul>
+                    <li><a href="index.html" class="nav-active">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="ourservices.html">OUR SERVICES</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+                <!--Support Us Button-->
+                <a href="supportus.html" class="support-btn"><span>SUPPORT US</span></a>
+                <!--Hidden hamburger icon-->
+                <img src="./images/blackhamburgericon.png" alt="" onclick="hambgFunction()">
+            </div>
+        </nav>
+
+        <!--This is the header showcase and it contains the carousel-->
+        <!--Carousel-->
+        <section class="header-showcase" id="header-showcase">
+            <!--The button the changes to previous slide-->
+            <span class="slide-control prev" onclick="plusSlides(-1)">&#10094;</span>
+            <!--The button that changes to second slide-->
+            <span class="slide-control next" onclick="plusSlides(1)">&#10095;</span>
+
+            <!--Carousel dots-->
+            <div class="dots">
+                <span class="dot active" id="dot"></span>
+                <span class="dot" id="dot"></span>
+                <span class="dot" id="dot"></span>
+                <span class="dot" id="dot"></span>
+                <span class="dot" id="dot"></span>
+                <span class="dot" id="dot"></span>
+            </div>
+            
+            <!--These are the individual slides in the carousel-->
+            <div class="mySlides slide1" id="mySlides">
+                <h1 class="slidefade">Loving Others, Serving Others.</h1>
+                <h3 class="slidefade">Our organization is founded on the Christian principle of loving others through acts of service. We aim to adress the spiritual and educational needs of children and families within our community.</h3>
+            </div>
+            <div class="mySlides slide2" id="mySlides">
+                <h1 class="slidefade">Our Heart School is a place of worship for children.</h1>
+                <h3 class="slidefade">The purpose of our schools is to train the next generation in the things of God while also providing an excellent education that will prepare students for a life of success.</h3>
+            </div>
+            <div class="mySlides slide3" id="mySlides">
+                <h1 class="slidefade">The love of Jesus Christ is the principle upon which our organization stands.</h1>
+                <h3 class="slidefade">We achieve this by providing needed services and social supports for the families and communities we serve. We exist to demonstrate the love of Jesus Christ in action
+                </h3>
+            </div>
+            <div class="mySlides slide4" id="mySlides">
+                <h1 class="slidefade">We are a christian organization on a mission.</h1>
+                <h3 class="slidefade">Our aim is to inspire hope and encourage those we serve to work towards goals that will exceed expectations for their lives.</h3>
+            </div>
+            <div class="mySlides slide5" id="mySlides">
+                <h1 class="slidefade">Our mission is to demonstrate the excellence and majesty of Jesus Christ.</h1>
+                <h3 class="slidefade">We provide a high level of service coupled with compassion that will play a role in supporting individuals and families in need.</h3>
+            </div>
+    
+            <div class="mySlides slide6 supportus-slide" id="mySlides">
+                <h1 class="slidefade">You too can be a part of our work.</h1>
+                <!--<h3 class="slidefade">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, consequatur nulla. Maiores placeat unde saepe non laudantium sint enim reiciendis.</h3>-->
+                <h3 class="slidefade">
+                    <a href="supportus.html"><button> SUPPORT US</button></a>
+                </h3>
+            </div>
+        </section>
+    </header>
+    <!--End of header-->
+
+    <!--Why we exist section-->
+    <section class="why-we-exist">
+        <div class="why-we-exist-heading">
+            <p class="heading-word">WHY WE EXIST</p>
+        </div>
+        <p class="why-we-exist-words-1">Heart of Eve Foundation(Heart of Eve) is a duly registered NGO with the Ngerian Corporate Affairs Commission based in Lagos, Nigeria. It is the Nigerian arm of WAR Ministry Corporation (WAR) based in Newark, New Jersey, USA. </p>
+        <p class="why-we-exist-words-2">WAR is a non-profit organization founded on the Christian principle of loving others through acts of service. Through Heart of Eve foundation, WAR Ministry Corporation aims to provide Chris-centered services for indiviuals and families in Nigeria.</p>
+    </section>
+    <!--End of why we exist-->
+    
+    <!--What we do section-->
+    <section class="what-we-do">
+        <div class="what-we-do-left">
+            <p class="what-we-do-heading">WHAT WE DO</p>
+            <p class="what-we-do-words-1">Our organization aims to show the love of Christ in action as we provide needed services and social supports. Through our education initiative, we have created the Heart School. Through our Heart Schools, Heart of Eve Foundation aims to adress the spiritual and educational needs of children and families within our community. </p>
+            <a href="aboutus.html"><button>READ MORE</button></a>
+        </div>
+        <div class="what-we-do-right">
+        </div>
+    </section>
+    <!--End of what we do-->
+
+    <!--Who we  serve section-->
+    <section class="who-we-serve">
+        <div class="who-we-serve-left">
+        </div>
+        <div class="who-we-serve-right">
+            <p class="who-we-serve-heading">WHO WE SERVE</p>
+            <p class="who-we-serve-words-1">Heart of Eve Foundation is founded on the Christian principle of loving others through acts of service. Therefore, we provide a high quality level of service coupled with compassion that plays an essential role in supporting individuals and families in need.</p>
+            <a href="ourservices.html"><button>READ MORE</button></a>
+        </div>
+    </section>
+    <!--End of who we serve-->
+
+    <!--Mission and vision section-->
+    <section class="mission-and-vision">
+        <!--Mission segment to the left-->
+        <div class="mission-section mav-sec">
+            <img src="./images/ourmission3.png" alt="">
+            <h2>OUR MISSION</h2>
+            <p class="mission-statement">Our mission is to demonstrate the excellence and majesty of Christ Jesus by providing a high quality level of service coupled with compassion that will play an essential role in supporting individuals and families in need.</p>
+        </div>
+        <!--Vision segment to the right-->
+        <div class="vision-section mav-sec">
+            <img src="./images/ourvision1.png" alt="">
+            <h2>OUR VISION</h2>
+            <p class="mission-statement">Heart of Eve Foundation aims to inspire hope and encourage those we serve to work towards goals that will exceed expectations for their lives. We want to see the love of Christ in action as we provide Christ-centered services and needed support to families and communities. </p>
+        </div>
+    </section>
+    <!--End of mission and vision-->
+
+    <!--Footer starts-->
+    <footer>
+        <!--Footer social media icons-->
+        <div class="social-icons">
+            <span><a href="https://www.facebook.com/HeartofEveFoundation/" target="_blank" class="fa fa-facebook"></a></span>
+            <span><a href="https://twitter.com/HeartofEve_fdn?t=EksoSxEGRXTiRp6Vz7IW5Q&s=09" target="_blank" class="fa fa-twitter"></a></span>
+            <span><a href="https://www.linkedin.com/company/heart-of-eve-foundation" target="_blank" class="fa fa-linkedin"></a></span>
+            <span><a href="https://www.instagram.com/heartofeve_foundation/" target="_blank" class="fa fa-instagram"></a></span>
+            <span><a href="https://wa.link/qkntqv" target="_blank" class="fa fa-whatsapp"></a></span>
+        </div>
+        <!--Copyright segment-->
+        <div class="copyright">
+            <h3>@<script defer>document.write(new Date().getFullYear())</script> Heart of Eve Foundation</h3>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+
+
+    <!--This is the navigation section that shhows up when the hamburger is clicked on small and mid width devices-->
+    <aside class="hidden-nav" id="hidden-nav">
+        <!--The section that contains the cross to close the hidden nav-->
+        <a href="#" class="fa fa-times close-nav" onclick="closeNavFunction()"></a>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="ourservices.html">OUR SERVICES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="supportus.html">SUPPORT US</a></li>
+        </ul>
+    </aside>
+
+    <script>
+        //This is the JS for the automatic carousels slide change every 5 secs.
+        let slideIndex2 = 0;
+        showSlides2();
+
+        function showSlides2() {
+        let i;
+        let slides2 = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides2.length; i++) {
+            slides2[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+        }
+        slideIndex2++;
+        if (slideIndex2 > slides2.length) {slideIndex2 = 1}
+        slides2[slideIndex2 - 1].style.display = "flex";
+        dots[slideIndex2-1].className += " active";
+        setTimeout(showSlides2, 5000); // Change image every 5 seconds
+        }
+    </script>
+</body>
+</html>

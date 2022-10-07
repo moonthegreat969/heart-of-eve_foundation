@@ -1,0 +1,361 @@
+/**** Media query for max- width of 1010px*/
+@media (max-width : 1010px ){
+    header{
+        & nav{
+            & .navright{
+                & ul , & .support-btn{
+                    display: none;
+                }
+                
+                & img{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+/**** Media query for max- width of 915px*/
+@media (max-width : 915px ){
+    header{
+        & .header-showcase{
+            height: 500px;
+            & h1{
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    main{
+        padding: 2rem 3%;
+        & h3 , & h4{
+            max-width: 85%;
+        }
+    }
+
+    .our-founder{
+        padding: 0.75rem 3%;
+
+        & > h1{
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+        }
+
+        & .founder-info{
+            & img{
+                height: 250px;
+                width: 250px;
+            }
+
+            & h1{
+                font-size: 1.3rem;
+            }
+
+            & h4{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .details{
+        padding: 0 3%;
+        & .who-we-are{
+            flex-direction: column;
+
+            & .who-we-are-words{
+                width : 100%;
+
+                & h2{
+                    margin-bottom: 2rem;
+                    font-size: 1.2rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            & .who-we-are-img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        & .why-we-exist{
+            flex-direction: column-reverse;
+
+            & .why-we-exist-words{
+                width : 100%;
+
+                & h2{
+                    margin-bottom: 2rem;
+                    font-size: 1.2rem;
+                    padding-right: 1rem;
+                }
+            }
+
+            & .why-we-exist-img{
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}
+
+/**** Media query for max- width of 800px*/
+
+@media (max-width : 800px){
+    .mission-and-vision{
+        flex-direction: column;
+
+        & .mav-sec{
+            width: 100%;
+
+            & h2{
+                font-size: 1.3rem;
+            }
+
+            & .mission-statement{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+/**** Media query for max- width of 520px*/
+
+@media (max-width:520px){
+    header{
+        & nav{
+            padding: 0.2rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 70px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        & .header-showcase{
+            height:400px;
+            & h1{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    main{
+        & h1{
+            font-size:1.7rem;
+        }
+
+        & h3 , & h4{
+            max-width: 95%;
+        }
+
+        & h3{
+            font-size: 1.1rem;
+        }
+
+        & h4{
+            font-size: 0.9rem;
+        }
+    }
+
+    .our-founder{
+
+        & > h1{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        & .founder-info{
+            & img{
+                height: 200px;
+                width: 200px;
+            }
+
+            & h1{
+                font-size: 1.3rem;
+            }
+
+            & h4{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .details{
+        & .who-we-are{
+            & .who-we-are-words{
+                & h2{
+                    font-size: 1.1rem;
+                }
+            }
+
+            & .who-we-are-img{
+                height: 400px;
+            }
+        }
+
+        & .why-we-exist{
+            & .why-we-exist-words{
+                & h2{
+                    font-size: 1.1rem;
+                }
+            }
+
+            & .why-we-exist-img{
+                height: 400px;
+            }
+        }
+    }
+
+    .mission-and-vision{
+        & .mav-sec{
+            & .mission-statement{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    footer{
+        flex-direction: column;
+
+        & .social-icons{
+            width: 100%;
+            justify-content: flex-end;
+
+            & span{
+                margin-right: 0;
+                margin-left: 0.75rem;
+            }
+        }
+
+        & .copyright{
+            width: 100%;
+        }
+    }
+
+}
+
+/**** Media query for max- width of 360px*/
+
+@media (max-width : 360px){
+    header{
+        & nav{
+            padding: 0.4rem 2%;
+            & .navlogo a{
+                & img{
+                    width: 40px;
+                }
+
+                & .navlogo-name{
+                    & h1{
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+        & .header-showcase{
+            height:350px;
+            & h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    main{
+        & h1{
+            font-size:1.4rem;
+        }
+
+        & h3 , & h4{
+            max-width: 95%;
+        }
+
+        & h3{
+            font-size: 1rem;
+        }
+
+        & h4{
+            font-size: 0.85rem;
+        }
+    }
+
+    .our-founder{
+
+        & > h1{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        & .founder-info{
+            & img{
+                height: 180px;
+                width: 180px;
+            }
+
+            & h1{
+                font-size: 1.1rem;
+            }
+
+            & h4{
+                font-size: 0.9rem;
+            }
+        }
+
+        & .founder-modal{
+            & .modal-content{
+                min-width: 100vw;
+            }
+        }
+    }
+
+    .details{
+        & .who-we-are{
+            & .who-we-are-words{
+                & h2{
+                    font-size: 1rem;
+                }
+            }
+
+            & .who-we-are-img{
+                height: 350px;
+            }
+        }
+
+        & .why-we-exist{
+            & .why-we-exist-words{
+                & h2{
+                    font-size: 1.1rem;
+                }
+            }
+
+            & .why-we-exist-img{
+                height: 350px;
+            }
+        }
+    }
+
+    .mission-and-vision{
+        & .mav-sec{
+            & .mission-statement{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width : 270px){
+    :root{
+        font-size: 90%;
+    }
+}
+@media (max-width : 180px){
+    :root{
+        font-size: 60%;
+    }
+}
