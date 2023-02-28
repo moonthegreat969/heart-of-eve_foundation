@@ -51,11 +51,13 @@ header nav .navlogo a .navlogo-name {
   flex-direction: column;
 }
 header nav .navlogo a .navlogo-name h1 {
-  color: #blue !important;
+  color: #000;
   font-family: Montserrat, Poppins, Verdana;
   font-weight: 700 !important;
   font-size: 1.3rem;
-  line-height: 0em;
+  line-height: 1.1em;
+  margin-bottom:0 !important;
+  padding-bottom:0 !important;
 }
 header nav .navright {
   margin-left: auto;
